@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>邮件验证</title>
+</head>
+<body>
+<div style="padding: 24px 0px 0px 24px">
+    <div style="line-height: 80px">{{name}},您好！</div>
+    <div style="line-height: 40px">
+        这是创建帐户的验证邮件，请勿向任何人泄漏您收到的验证邮件：
+        <br/>验证码:【{{code}}】
+        <br/>请确保是您本人操作，
+<!--        <br/>或者<a href="{{url}}">点击前往</a>进行账号验证，-->
+        <br/>验证成功后即可启用账号！
+    </div>
+    <div style="line-height: 80px">此致</div>
+    <div>操作时间:{{time}}</div>
+</div>
+</body>
+</html>
